@@ -1,0 +1,10 @@
+stages:
+  train:
+    cmd: python train_mlflow.py --input "data/Online Retail 2.xlsx"
+    deps:
+      - train_mlflow.py
+      - ../../src/train.py
+      - data/Online Retail 2.xlsx
+    outs:
+      - outputs/run_comparison.csv
+      - outputs/best_run.json

@@ -1,0 +1,26 @@
+schema: '2.0'
+stages:
+  train:
+    cmd: python train_mlflow.py --input "data/Online Retail 2.xlsx"
+    deps:
+    - path: ../../src/train.py
+      hash: md5
+      md5: d35abf294d03c5752f013bb1168c8c63
+      size: 11024
+    - path: data/Online Retail 2.xlsx
+      hash: md5
+      md5: eabb103be3b852e6d416a3e07ee70222
+      size: 23722295
+    - path: train_mlflow.py
+      hash: md5
+      md5: b43cbe247636b83b56410eaa172b19c9
+      size: 2734
+    outs:
+    - path: outputs/best_run.json
+      hash: md5
+      md5: 44ce1ad116cad32239af37291779f79c
+      size: 79
+    - path: outputs/run_comparison.csv
+      hash: md5
+      md5: aae9148c475f0c9f620b0e58bc6e7dc8
+      size: 143

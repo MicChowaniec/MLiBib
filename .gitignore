@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+.deps/
+tests/
+outputs/*.joblib
+labs/lab06/data/
+labs/lab06/__MACOSX/
+labs/*/outputs/
+labs/lab07/mlruns/
+labs/lab07/mlflow.db
+labs/lab07/mlartifacts/
